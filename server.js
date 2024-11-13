@@ -14,12 +14,13 @@ app.set("views", "views");  // Ko'rinishlarni "views" papkasidan olish
 app.set("view engine", "ejs");  // EJS templating engine ishlatish
 
 // Routing (yo'naltirish)
-app.get("/olma", function (req, res) {
-  res.send("<h1>Mana sanga olam olam olmaaaa~</h1>");  // "/hello" manzili uchun javob
+app.post("/create-item", (req, res) => {
+  console.log(req.body);
+  res.json({ test: "success" });
 });
 
-app.get("/banan", function (req, res) {
-  res.send("<h1>sizga banan sovg'a qildik. Olurasiz~</h1>");  // "/gift" manzili uchun javob
+app.get("/", function (req, res) {
+  res.render("harid");  // "/gift" manzili uchun javob
 });
 
 
