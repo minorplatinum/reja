@@ -1,0 +1,630 @@
+
+
+.frame {
+    width: 100%;
+    height: 100%;
+  
+    position: relative;
+    display: flex;
+  
+    flex-direction: row;
+    justify-content: center;
+    background: #e5e5e5;
+  }
+  
+  .frame .main_frame {
+    width: 1440px;
+    height: 1312px;
+  
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+    margin-top: 2px;
+    
+  }
+  
+  .main_frame .left_frame {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: relative;
+    width: 305px;
+    height: 1315px;
+    background-color: white;
+  }
+  
+  .main_frame .midd_frame {
+    position: relative;
+    width: 970px;
+    height: 1259px;
+    margin-left: 30px;
+    margin-right: 27px;
+    display: flex;
+    flex-direction: column;
+  
+    
+  }
+  
+  .main_frame .right_frame {
+    position: relative;
+  
+    width: 108px;
+    height: 1315px;
+  
+    background-color: white;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main_frame .left_1 {
+    position: relative;
+    width: 228px;
+    height: 267px;
+    margin-top: 50px;
+    margin-left: 37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .main_frame .left_1 .left_1-1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 156.16px;
+    height: 142.53px;
+    margin-bottom: 29.46px;
+  }
+  
+  .main_frame .marginer {
+    position: relative;
+    width: 220px;
+    height: 0px;
+    margin-left: 40px;
+    margin-top: 39px;
+    margin-bottom: 25px;
+    border: 1.5px solid #f0f0f6;
+  }
+  
+  .main_frame .left_frame .left_2 {
+    position: relative;
+    width: 221px;
+    height: 126px;
+    margin-left: 44px;
+    /* background: aqua; */
+  }
+  
+  .main_frame .left_frame .left_1-2 {
+    position: relative;
+    width: 66.63px;
+    height: 20.9px;
+    margin-bottom: 6.65px;
+  
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 123.6%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+  
+    color: #2b2b2b;
+  }
+  
+  .main_frame .left_frame .left_3 {
+    position: relative;
+    width: 220px;
+    height: 153px;
+    margin-left: 45px;
+    margin-top: 25px;
+    /* background: aqua; */
+  }
+  
+  .main_frame .left_frame .left_1-3 {
+    width: 147.84px;
+    height: 25.65px;
+    color: #767676;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 160% */
+    text-transform: capitalize;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main_frame .left_frame .left_icons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 220px;
+    margin-top: 19px;
+  }
+  
+  .main_frame .left_frame .link_href {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .main_frame .left_frame .icon {
+    position: relative;
+    width:24.986px;
+    height: 21.609px;
+    flex-shrink: 0; ;
+    height: 21.6px;
+    
+    border-radius: 50%;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    background: #FFB400;
+    display: flex;
+    align-items: self-start;
+  }
+  
+  .main_frame .left_frame .icon-1 {
+    position: relative;
+    
+  }
+  
+  .main_frame .left_frame .left_4 {
+    position: relative;
+    width: 220px;
+    height: 252px;
+    margin-left: 45px;
+    margin-top: 25px;
+    
+  }
+  
+  .main_frame .left_frame .left_5 {
+    position: relative;
+    width: 186px;
+    height: 148px;
+    margin-left: 45px;
+    margin-top: 25px;
+    
+  }
+  
+  .age_desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 24px;
+    align-items: center;
+    width: 100%;
+  }
+  .age {
+    position: relative;
+    width: 46.21px;
+    height: 24px;
+    background: rgb(255, 180, 0);
+    text-align: center;
+  }
+  
+  .contact_desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 24px;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .residence {
+    position: relative;
+    width: 89px;
+    height: 24px;
+    background: rgb(255, 180, 0);
+    text-align: center;
+  }
+  
+  .freelance_desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 24px;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .freelance {
+    position: relative;
+    width: 74px;
+    height: 24px;
+    background: rgb(255, 180, 0);
+    text-align: center;
+  }
+  .freelance_info {
+    color: rgb(126, 185, 66);
+  }
+  
+  .address_desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 24px;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .address_info {
+    position: relative;
+    width: 64px;
+    height: 24px;
+    background: rgb(255, 180, 0);
+    text-align: center;
+  }
+  .address_residence {
+    color: rgb(0, 0, 0);
+  }
+  
+  .lang_title {
+    color: rgb(43, 43, 43);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+  }
+  
+  .lang_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .lang_txt {
+    color: rgb(118, 118, 118);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+  }
+  
+  .percantge_bar_container {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    border: 0.5px solid rgb(255, 180, 0);
+    border-radius: 30px;
+    margin-top: 6px;
+  }
+  
+  .percantge_bar {
+    height: 2px;
+    width: 100%;
+    background: rgb(255, 180, 0);
+  }
+  .percantge_bar_2 {
+    height: 2px;
+    width: 80%;
+    background: rgb(255, 180, 0);
+  }
+  .percantge_bar_3 {
+    height: 2px;
+    width: 50%;
+    background: rgb(255, 180, 0);
+  }
+  
+  .percantge_bar_3 {
+    height: 2px;
+    width: 50%;
+    background: rgb(255, 180, 0);
+  }
+  .percantge_bar_4 {
+    height: 2px;
+    width: 90%;
+    background: rgb(255, 180, 0);
+  }
+  .percantge_bar_5 {
+    height: 2px;
+    width: 85%;
+    background: rgb(255, 180, 0);
+  }
+  .percantge_bar_6 {
+    height: 2px;
+    width: 80%;
+    background: rgb(255, 180, 0);
+  }
+  .percantge_bar_7 {
+    height: 2px;
+    width: 75%;
+    background: rgb(255, 180, 0);
+  }
+  .percantge_bar_8 {
+    height: 2px;
+    width: 70%;
+    background: rgb(255, 180, 0);
+  }
+  .main_frame .left_4 {
+    position: relative;
+    width: 228px;
+    height: 252px;
+    margin-left: 45px;
+    
+  }
+  
+  .lang_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .extra_skill_container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  
+  .skill_txt {
+    position: relative;
+  
+    width: 156px;
+    height: 24px;
+    color: rgb(118, 118, 118);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-left: 15px;
+  }
+  
+  .about_container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 971px;
+    height: 454.33px;
+    background: rgb(255, 255, 255);
+  }
+  
+  .text_container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* background-color: red; */
+  }
+  
+  .job_tile {
+    /* Doctor neurologists in OHSU Hospital */
+    position: relative;
+    width: 499.51px;
+    height: 116.744px;
+    margin-top: 99px;
+    margin-left: 56px;
+    color: #2b2b2b;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 123.6%;
+    letter-spacing: 0%;
+  }
+  .profile1 {
+    height: 446px;
+    width: 326;
+    position: relative;
+    margin-top: 19px;
+    margin-right: 61px;
+  }
+  .job_description {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus. */
+    position: relative;
+    width: 424.44px;
+    height: 85.61px;
+    margin-left: 61px;
+    color: rgb(118, 118, 118);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin-top: 17.11px;
+    text-transform: capitalize;
+  }
+  .hire_me_btn {
+    /* Button/Book Me */
+    position: relative;
+    width: 154px;
+    height: 51px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px 16px 32px;
+  
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-left: 56px;
+    margin-top: 28px;
+    /* Background */
+    border-radius: 5px;
+    border-color: rgb(255, 180, 0);
+    /* Yellow */
+    background: rgb(255, 180, 0);
+    font-weight: bold;
+  }
+  
+  .my_service_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .my_service_title {
+    /* my services */
+    position: relative;
+    width: 193px;
+    height: 40px;
+  
+    color: rgb(43, 43, 43);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 123.6%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+  }
+  
+  .my_service_txt {
+    position: relative;
+    width: 438px;
+    height: 68px;
+  
+    color: rgb(118, 118, 118);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 25px;
+  }
+  
+  .mid_frame_skill_container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+    justify-content: space-between;
+  }
+  
+  .mid_frame_skill_box {
+    position: relative;
+    width: 310px;
+    height: 225px;
+    /* White */
+    background: rgb(255, 255, 255);
+  
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+  }
+  
+  .mid_frame_skill_icon1 {
+    /* Group */
+    position: relative;
+    width: 65.88px;
+    height: 53.13px;
+    margin-top: 35px;
+  }
+  
+  .mid_frame_skill_title {
+    /* web development */
+    position: relative;
+  
+    color: rgb(43, 43, 43);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 28px;
+    text-transform: capitalize;
+  }
+  
+  .mid_frame_skill_txt {
+    color: rgb(118, 118, 118);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 15px;
+    position: relative;
+  }
+  
+  .mid_frame_skill_txt1 {
+    /* advertising */
+    /* web development */
+    position: relative;
+  
+    color: rgb(43, 43, 43);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 28px;
+    text-transform: capitalize;
+  }
+  
+  .mid_frame_skill_title1 {
+    color: rgb(118, 118, 118);
+    font-family: Inter;
+    width: 260px;
+    height: 78px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 15px;
+    position: relative;
+    margin-left: 25px;
+  }
+  
+  .mid_frame_skill_btn {
+    /* ORDER NOW */
+    position: relative;
+  
+    color: rgb(255, 180, 0);
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 27px;
+  }
+  
+  .icon-2 {
+    margin-top: 50px;
+   width: 30px;
+   height: 30px;
+   margin-left: 15px;
+  }
+  
+  .right_frame_btn_container {
+    display: flex;
+    flex-direction: column;
+  
+    position: relative;
+    width: 65px;
+    height: 493px;
+    /* background-color: red; */
+    justify-content: space-between;
+    margin-top: 254px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .icon-4 {
+    /* Ellipse 10 */
+    position: relative;
+    width: 65px;
+    height: 33px;
+    flex-shrink: 0;
+  }
