@@ -1,49 +1,29 @@
-console.log("Hello, Dcoder!");
-console.log("Web Serverni boshlash");
+const https = require("http");
 
-const express = require("express");  // Express kutubxonasini chaqirish
-const app = express();
-const http = require("http");
-const fs = require("fs");
+const mongodb = require("mongodb");
 
-let user;
-fs.readFile("database/user.json", "utf8", (err, data) => {
-  if (err) {
-    console.log("ERROR:", err);
-  } else {
-    user = JSON.parse(data);
+let db;
+const connectionString =
+  "mongodb+srv://muhammadziyo:XYMkInIMi0GHlC6m@cluster0.a9dmi.mongodb.net/Reja?retryWrites=true&w=majority&appName=Cluster0";
+
+mongodb.connect(
+  connectionString,
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  },
+  (err, client) => {
+    if (err) console.log("Error on connection MongoDB");
+    else {
+      console.log("MongoDB Connection succeed");
+      module.exports = client;
+      const app = require("./app");
+      const server = https.createServer(app);
+      let PORT = 3000;
+      server.listen(PORT, function () {
+        console.log(`The server is running successfully on port ${PORT},
+http://localhost:${PORT}`);
+      });
+    }
   }
-});
-
-
-
-app.use(express.static("public"));  // Statik fayllarni "public" papkasidan yuklash
-app.use(express.json());  // JSON formatidagi ma'lumotlarni ishlash
-app.use(express.urlencoded({ extended: true }));  // URL-kodlangan ma'lumotlarni olish
-
-// Views (ko'rinish) sozlamalari
-app.set("views", "views");  // Ko'rinishlarni "views" papkasidan olish
-app.set("view engine", "ejs");  // EJS templating engine ishlatish
-
-// Routing (yo'naltirish)
-app.post("/create-item", (req, res) => {
-  console.log(req.body);
-  res.json({ test: "success" });
-});
-
-app.get('/author' , (req, res) => {
-  res.render("author",{ user: user});
-});
-
-
-app.get("/", function (req, res) {
-  res.render("reja");  // "/gift" manzili uchun javob
-});
-
-
-// Serverni ishga tushirish
-const server = http.createServer(app);  // Server yaratish
-let PORT = 3000;
-server.listen(PORT, function () {
-  console.log(`Server muvaffaqiyatli ishga tushdi, port: ${PORT}, http://localhost:${PORT}`);  
-});
+);
