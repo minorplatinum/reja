@@ -96,7 +96,7 @@
 
 
 
-   function countLetter(letter, names) {
+     /*function countLetter(letter, names) {
     let count = 0;
     for (let char of names) {
         if (char === letter) {
@@ -110,5 +110,15 @@
 let students = "Ali, Vali,Samandar, Emil";
 
 // "a" harfi necha marta qatnashganini saneymiz
-console.log(countLetter("a", students)); // Output: 3
+console.log(countLetter("a", students)); // Output: 3*/
 
+
+ //B - TASK 
+
+function countDigits(s) {
+    return s.split('').filter(char => !isNaN(char) && char !== ' ').length;
+}
+
+// Misol uchun
+const result = countDigits("ad2a54y79wet0sfgb9");
+console.log(result); // javob: 7
