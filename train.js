@@ -115,10 +115,64 @@ console.log(countLetter("a", students)); // Output: 3*/
 
  //B - TASK 
 
-function countDigits(s) {
+/*function countDigits(s) {
     return s.split('').filter(char => !isNaN(char) && char !== ' ').length;
 }
 
 // Misol uchun
 const result = countDigits("ad2a54y79wet0sfgb9");
-console.log(result); // javob: 7
+console.log(result); // javob: 7*/
+
+class Shop {
+    constructor(non, lagmon, cola) {
+        this.products = {
+            non,
+            lagmon,
+            cola
+        };
+    }
+
+    getCurrentTime() {
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        return `${hours}:${minutes}`;
+    }
+
+    qoldiq() {
+        const time = this.getCurrentTime();
+        return `Hozir ${time}da ${this.products.non}ta non, ${this.products.lagmon}ta lagmon va ${this.products.cola}ta cola mavjud!`;
+    }
+
+    sotish(mahsulot, soni) {
+        if (this.products[mahsulot] === undefined) {
+            return `Bunday mahsulot mavjud emas!`;
+        }
+
+        if (this.products[mahsulot] < soni) {
+            return `Hozirda ${mahsulot} yetarli emas! Faqat ${this.products[mahsulot]}ta mavjud.`;
+        }
+
+        this.products[mahsulot] -= soni;
+        const time = this.getCurrentTime();
+        console.log(`Hozir ${time}da ${mahsulot}dan ${soni}ta sotildi.`);
+    }
+
+    qabul(mahsulot, soni) {
+        if (this.products[mahsulot] === undefined) {
+            return `Bunday mahsulot mavjud emas!`;
+        }
+
+        this.products[mahsulot] += soni;
+        const time = this.getCurrentTime();
+        console.log(`Hozir ${time}da ${mahsulot}dan ${soni}ta qabul qilindi.`);
+    }
+}
+
+// Misol:
+const shop = new Shop(4, 5, 2);
+
+console.log(shop.qoldiq()); // Qoldiqni ko'rsatadi
+shop.sotish('non', 3);      // 3 ta non sotildi
+shop.qabul('cola', 4);      // 4 ta cola qabul qilindi
+console.log(shop.qoldiq()); // Yangilangan qoldiqni ko'rsatadi

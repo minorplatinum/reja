@@ -2,9 +2,8 @@ const https = require("http");
 
 const mongodb = require("mongodb");
 
-let db;
-const connectionString =
-  "mongodb+srv://muhammadziyo:XYMkInIMi0GHlC6m@cluster0.a9dmi.mongodb.net/Reja?retryWrites=true&w=majority&appName=Cluster0";
+const connectionString = "mongodb+srv://muhammadjon:998915956030@cluster0.xyi2r.mongodb.net/Rejaa?retryWrites=true&w=majority&appName=Cluster0";
+
 
 mongodb.connect(
   connectionString,
