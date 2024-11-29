@@ -79,9 +79,9 @@ app.post("/delete-all", (req, res) => {
 //   res.render("author", { user: user });
 // });
 
-// app.get("/", function (req, res) {
-//   res.render("reja");
-// });
+//app.get("/", function (req, res) {
+  //res.render("reja");
+ //});
 
 app.get("/", function (req, res) {
   console.log("user entered /");

@@ -123,7 +123,8 @@ console.log(countLetter("a", students)); // Output: 3*/
 const result = countDigits("ad2a54y79wet0sfgb9");
 console.log(result); // javob: 7*/
 
-class Shop {
+//TASK-C
+/*class Shop {
     constructor(non, lagmon, cola) {
         this.products = {
             non,
@@ -175,4 +176,20 @@ const shop = new Shop(4, 5, 2);
 console.log(shop.qoldiq()); // Qoldiqni ko'rsatadi
 shop.sotish('non', 3);      // 3 ta non sotildi
 shop.qabul('cola', 4);      // 4 ta cola qabul qilindi
-console.log(shop.qoldiq()); // Yangilangan qoldiqni ko'rsatadi
+console.log(shop.qoldiq()); // Yangilangan qoldiqni ko'rsatadi*/
+
+
+//TASK - D 
+
+function checkContent(str1, str2) {
+    // Birinchi navbatda stringlarni o'zgarmas bo'lishi uchun tartibga keltiramiz
+    const sortedStr1 = str1.split('').sort().join('');
+    const sortedStr2 = str2.split('').sort().join('');
+    
+    // Har ikkala stringni solishtiramiz
+    return sortedStr1 === sortedStr2;
+}
+
+// Misol uchun:
+console.log(checkContent("mitgroup", "gmtiprou")); // true
+console.log(checkContent("hello", "world"));      // false
