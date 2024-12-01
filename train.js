@@ -181,7 +181,7 @@ console.log(shop.qoldiq()); // Yangilangan qoldiqni ko'rsatadi*/
 
 //TASK - D 
 
-function checkContent(str1, str2) {
+/*function checkContent(str1, str2) {
     // Birinchi navbatda stringlarni o'zgarmas bo'lishi uchun tartibga keltiramiz
     const sortedStr1 = str1.split('').sort().join('');
     const sortedStr2 = str2.split('').sort().join('');
@@ -193,3 +193,11 @@ function checkContent(str1, str2) {
 // Misol uchun:
 console.log(checkContent("mitgroup", "gmtiprou")); // true
 console.log(checkContent("hello", "world"));      // false
+
+TASK = E */
+
+function getReverse(str) {
+  return str.split('').reverse().join('');
+}
+
+console.log(getReverse("hello"));  // "olleh"
